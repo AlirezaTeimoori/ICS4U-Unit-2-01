@@ -1,16 +1,21 @@
 package stackPackage;
 
-public class Stack {
+import java.util.ArrayList;
 
-    public int test;
+class Stack {
 
-    public stack(this.test) {
-        
-        this.test = number;
+    private final ArrayList<Integer> myStack = new ArrayList<Integer>();
+
+    public void push(int number) {
+        myStack.add(number);
     }
 
-    public push(userNumber){
-
-        
+    public String toString() {
+        String output = "";
+        for (Integer count : myStack) {
+            output =+ count + "\n";
+        }
+        return output;
     }
+
 }
