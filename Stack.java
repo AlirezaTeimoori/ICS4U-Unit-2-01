@@ -1,5 +1,3 @@
-package stackPackage;
-
 
 import java.util.ArrayList;
 
@@ -16,7 +14,7 @@ class Stack {
         String output = "";
 
         for (Integer count : myStack) {
-            output =+ count + "\n";
+            output += count + "\n";
         }
         return output.toString();
     }
